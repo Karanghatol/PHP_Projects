@@ -1,60 +1,111 @@
-
 <?php
-    include "C:/Users/lenovo/Documents/bootstrap/bootstrap-5.3.1-examples/navbars/navbar.css";
+if (isset($_POST['register'])) {
+    $conn = new mysqli('localhost', 'root', '', 'dbcon_demo');
+    if ($conn) {
+        $sql = "SELECT MAX(id) FROM dbcon_t2";
+        $result = mysqli_query($conn, $sql);
+
+        if ($row = mysqli_fetch_assoc($result)) {
+            $id = $row['fname'];
+            $id++;
+        } else {
+            $id = 1;
+        }
+
+        $fname = $_POST['fname'];
+        $mname = $_POST['mname'];
+        $lname = $_POST['lname'];
+        $dob = $_POST['dob'];
+        $gender = $_POST['gender'];
+        $email = $_POST['email'];
+        $mob = $_POST['mob'];
+        $add = $_POST['add'];
+        $ch = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890/?@#_4$%&*";
+        $p = substr(str_shuffle($ch), 0, 6);
+
+        $query = "INSERT INTO `dbcon_t2` (`id`, `fname`, `mname`, `lname`, `dob`, `gender`, `email`, `mob`, `add`) VALUES ('','$fname','$mname','$lname','$dob','$gender','$email','$mob','$add')";
+
+        if (mysqli_query($conn, $query)) {
+            echo "<script>alert('registration successful') </script>";
+        } else {
+            echo "not registered!!!!!!";
+        }
+    } else {
+        echo "not connected to connection -- -- - -- - -- !!!!!!";
+    }
+}
+if(isset($_POST['clear'])){
+    ob_end_clean();
+}
 ?>
-
-
-<!doctype html>
-<html lang="en" data-bs-theme="auto">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script src="../assets/js/color-modes.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        margin: auto;
+        padding: 5px;
+        width: 550px;
+        height: 650px;
+        display: block;
+        border: 2px solid black;
+    }
+    input {
+        width: 97%;
+        height: max-content;
+        height: 30px;
+        font-size: medium;
+        border: 2px solid gray;
+        margin: 5px;
+        border-radius: 6px 6px 0px 6px;
+        padding-left: 10px;
+    }
+    h1 {
+        color: navy;
+        background-color: whitesmoke;
+        width: 100%;
+        font-size: 63px;
+    }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.115.4">
-    <title>Breadcrumbs · Bootstrap v5.3</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/breadcrumbs/">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
+    #iradio {
+        height: 15px;
+        width: 15px;
+    }
+    .submit {
+        background-color: blue;
+        color: white;
+        border: 2px solid gray;
+        border-radius: 10px 10px 10px 10px;
+        font-weight: bolder;
+        font-size: 19px;
+        height: 35px;
+    }
+</style>
 <body>
-
-    <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-        <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
-        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-            <button class="btn btn-primary">Button</button>
-        </div>
-    </div>
-
-
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <div class="b-example-divider"></div>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
+    <form action="" method="post">
+        <h1>Registration Form</h1>
+        <input type="text" name="fname" id="" placeholder="first name"><br>
+        <input type="text" name="mname" id="" placeholder="middel nname"><br>
+        <input type="text" name="lname" id="" placeholder="first name"><br>
+        <input type="date" name="dob" /><br>
+        male
+        <input type="radio" name="gender" value="m" id="iradio" />
+        felmale
+        <input type="radio" name="gender" value="f" id="iradio" />
+        other
+        <input type="radio" name="gender" value="o" id="iradio" />
+        <input type="email" name="email" id="" placeholder="email"><br>
+        <input type="text" name="mob" id="" placeholder="mobile number"><br>
+        <input type="text" name="add" id="" placeholder="address"><br>
+        <!-- <input type="password" name="p" id="" placeholder="autogenerated password"><br> --><br>
+        <input type="submit" value="Register" name="register" class="submit" />
+        <input type="submit" value="Clear" name="clear" class="submit" />
+    </form>
 </body>
 
 </html>
