@@ -1,0 +1,218 @@
+
+
+<!--     <select name="field">
+                    <optgroup label="Medical and Healthcare">
+                        <option>Doctor</option>
+                        <option>Nurse</option>
+                        <option>Dentist</option>
+                        <option>Pharmacist</option>
+                        <option>Surgeon</option>
+                        <option>Radiologist</option>
+                        <option>Physical Therapist</option>
+                        <option>Psychologist</option>
+                        <option>Veterinarian</option>
+                        <option>Medical Researcher</option>
+                    </optgroup>
+                    <optgroup label="Information Technology and Computer Science">
+                        <option>Software Developer</option>
+                        <option>Data Scientist</option>
+                        <option>Network Engineer</option>
+                        <option>Cybersecurity Analyst
+                        <option>
+                        <option>Web Developer</option>
+                        <option>Systems Administrator</option>
+                        <option>Database Administrator</option>
+                        <option>UI/UX Designer</option>
+                        <option>IT Project Manager</option>
+                        <option>DevOps Engineer</option>
+                    </optgroup>
+                    <optgroup label="Business and Finance">
+                        <option>Accountant</option>
+                        <option>Financial Analyst</option>
+                        <option>Investment Banker</option>
+                        <option>Marketing Manager</option>
+                        <option>Human Resources Manager</option>
+                        <option>Business Consultant</option>
+                        <option>Economist</option>
+                        <option>Financial Planner</option>
+                        <option>Actuary</option>
+                        <option>Entrepreneur</option>
+                    </optgroup>
+                    <optgroup label="Education">
+                        <option>Teacher</option>
+                        <option>Professor</option>
+                        <option>School Principal</option>
+                        <option>Education Counselor</option>
+                        <option>Librarian</option>
+                        <option>Tutor</option>
+                        <option>School Psychologist</option>
+                        <option>Education Administrator</option>
+                        <option>Special Education Teacher</option>
+                        <option>School Nurse</option>
+                    </optgroup>
+                    <optgroup label="Engineering">
+                        <option>Civil Engineer</option>
+                        <option>Mechanical Engineer</option>
+                        <option>Electrical Engineer</option>
+                        <option>Chemical Engineer</option>
+                        <option>Aerospace Engineer</option>
+                        <option>Environmental Engineer</option>
+                        <option>Biomedical Engineer</option>
+                        <option>Structural Engineer</option>
+                        <option>Software Engineer</option>
+                        <option>Industrial Engineer</option>
+                    </optgroup>
+                    <optgroup label="Arts and Entertainment">
+                        <option>Actor</option>
+                        <option>Musician</option>
+                        <option>Artist</option>
+                        <option>Film Director</option>
+                        <option>Graphic Designer</option>
+                        <option>Fashion Designer</option>
+                        <option>Photographer</option>
+                        <option>Writer</option>
+                        <option>Dancer</option>
+                        <option>Comedian</option>
+                    </optgroup>
+                    <optgroup label="Legal and Law Enforcement">
+                        <option>Lawyer</option>
+                        <option>Police Officer</option>
+                        <option>Judge</option>
+                        <option>Paralegal</option>
+                        <option>Private Investigator</option>
+                        <option>Correctional Officer</option>
+                        <option>Legal Secretary</option>
+                        <option>Criminologist</option>
+                        <option>Immigration Officer</option>
+                        <option>Forensic Scientist</option>
+                    </optgroup>
+                    <optgroup label="Science and Research">
+                        <option>Biologist</option>
+                        <option>Chemist</option>
+                        <option>Physicist</option>
+                        <option>Astronomer</option>
+                        <option>Geologist</option>
+                        <option>Meteorologist</option>
+                        <option>Marine Biologist</option>
+                        <option>Ecologist</option>
+                        <option>Archaeologist</option>
+                        <option>Research Scientist</option>
+                    </optgroup>
+                    <optgroup label="Health and Wellness">
+                        <option>Personal Trainer</option>
+                        <option>Nutritionist</option>
+                        <option>Chiropractor</option>
+                        <option>Massage Therapist</option>
+                        <option>Acupuncturist</option>
+                        <option>Physical Trainer</option>
+                        <option>Yoga Instructor</option>
+                        <option>Occupational Therapist</option>
+                        <option>Speech Therapist</option>
+                        <option>Wellness Coach</option>
+                    </optgroup>
+                    <optgroup label="Hospitality and Tourism">
+                        <option>Chef</option>
+                        <option>Hotel Manager</option>
+                        <option>Travel Agent</option>
+                        <option>Tour Guide</option>
+                        <option>Sommelier</option>
+                        <option>Event Planner</option>
+                        <option>Bartender</option>
+                        <option>Concierge</option>
+                        <option>Cruise Ship Captain</option>
+                        <option>Ski Instructor</option>
+                    </optgroup>
+                    <optgroup label="Trades and Skilled Labor">
+                        <option>Electrician</option>
+                        <option>Plumber</option>
+                        <option>Carpenter</option>
+                        <option>Mechanic</option>
+                        <option>Welder</option>
+                        <option>HVAC_Technician</option>
+                        <option>Mason</option>
+                        <option>Locksmith</option>
+                        <option>Roofer</option>
+                        <option>Auto_Body_Repair_Technician</option>
+                    </optgroup>
+                    <optgroup label="Social and Community Services">
+                        <option>Social Worker</option>
+                        <option>Counselor</option>
+                        <option>Therapist</option>
+                        <option>Marriage and Family Therapist</option>
+                        <option>Child Welfare Worker </option>
+                        <option>Community Organizer </option>
+                        <option>Rehabilitation Counselor </option>
+                        <option>Volunteer Coordinator </option>
+                        <option>Gerontologist</option>
+                        <option>Public Health Worker </option>
+                    </optgroup>
+                    <optgroup label="Agriculture and Farming">
+                        <option>Farmer</option>
+                        <option>Agronomist</option>
+                        <option>Rancher</option>
+                        <option>Horticulturist</option>
+                        <option>Agricultural Engineer</option>
+                        <option>Farm Laborer</option>
+                        <option>Beekeeper</option>
+                        <option>Viticulturist</option>
+                        <option>Animal Breeder</option>
+                        <option>Fisherman</option>
+                    </optgroup>
+                    <optgroup label="Aviation and Transportation">
+                        <option>Pilot</option>
+                        <option>Flight Attendant</option>
+                        <option>Air Traffic Controller</option>
+                        <option>Ship Captain</option>
+                        <option>Bus Driver</option>
+                        <option>Train Engineer</option>
+                        <option>Delivery Driver</option>
+                        <option>Trucker</option>
+                        <option>Flight Instructor</option>
+                        <option>Helicopter Pilot</option>
+                    </optgroup>
+                    <optgroup label="Culinary Arts">
+                        <option>Pastry Chef</option>
+                        <option>Sous Chef</option>
+                        <option>Food Critic</option>
+                        <option>Food Stylist</option>
+                        <option>Caterer</option>
+                        <option>Sushi Chef</option>
+                        <option>Sommelier</option>
+                    </optgroup>
+                    <optgroup label="Sales and Marketing">
+                        <option>Sales Representative</option>
+                        <option>Marketing Coordinator</option>
+                        <option>Retail Manager</option>
+                        <option>Advertising Executive</option>
+                        <option>Sales Manager</option>
+                        <option>Brand Manager</option>
+                        <option>Market Researcher</option>
+                        <option>Sales Associate</option>
+                        <option>Digital Marketing Specialist</option>
+                        <option>Public Relations Specialist</option>
+                    </optgroup>
+                    <optgroup label="Environmental and Conservation">
+                        <option>Environmental Scientist</option>
+                        <option>Conservationist</option>
+                        <option>Park Ranger</option>
+                        <option>Ecotourism Guide</option>
+                        <option>Recycling Coordinator</option>
+                        <option>Forest Firefighter</option>
+                        <option>Soil Scientist</option>
+                        <option>Water Quality Technician</option>
+                        <option>Wildlife Biologist</option>
+                        <option>Marine Biologist</option>
+                    </optgroup>
+                    <optgroup label="Manufacturing and Production">
+                        <option>Factory Worker</option>
+                        <option>Production Supervisor</option>
+                        <option>Machine Operator</option>
+                        <option>Quality Control Inspector</option>
+                        <option>Assembly Line Worker</option>
+                        <option>Manufacturing Engineer</option>
+                        <option>Textile Worker</option>
+                        <option>Woodworker</option>
+                        <option>Glassblower</option>
+                        <option>Metal Fabricator</option>
+                    </optgroup>
+                </select>-->
